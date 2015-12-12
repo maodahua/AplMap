@@ -31,10 +31,7 @@ public class BasicMapActivity extends Activity {
 		la = it.getDoubleExtra("la", 30);
 		lo = it.getDoubleExtra("lo", 30);
 		//Toast.makeText(this, la+"  "+lo+"", Toast.LENGTH_LONG).show();
-//		CameraPosition cp = new CameraPosition(new LatLng(lo, la),
-//				17, 
-//				0,
-//				0);
+
 		CameraUpdate cu = CameraUpdateFactory.newLatLngZoom(new LatLng(la, lo),15);
 		aMap.moveCamera(cu);
 		MarkerOptions mo = new MarkerOptions();
